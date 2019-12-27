@@ -1,5 +1,8 @@
 package com.pluralsight.collections;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -10,5 +13,12 @@ public class Main {
         System.out.println(door);
         System.out.println(floorPanel);
         System.out.println(window);
+
+        Collection<Product> products = new ArrayList<>();
+        products.add(door);
+        products.add(floorPanel);
+        products.add(window);
+
+        System.out.println(products);
     }
 }
