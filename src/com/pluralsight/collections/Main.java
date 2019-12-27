@@ -2,6 +2,7 @@ package com.pluralsight.collections;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 
 public class Main {
 
@@ -10,15 +11,17 @@ public class Main {
         Product floorPanel = new Product("Floor Panel", 25);
         Product window = new Product("Glass Window", 10);
 
-        System.out.println(door);
-        System.out.println(floorPanel);
-        System.out.println(window);
-
         Collection<Product> products = new ArrayList<>();
         products.add(door);
         products.add(floorPanel);
         products.add(window);
 
         System.out.println(products);
+
+        final Iterator<Product> productIterator = products.iterator();
+        while(productIterator.hasNext()) {
+            Product product = productIterator.next();
+            System.out.println(product);
+        }
     }
 }
