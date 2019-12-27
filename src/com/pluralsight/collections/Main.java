@@ -34,5 +34,13 @@ public class Main {
         System.out.println(products.isEmpty());
         System.out.println(products.contains(window));
         System.out.println(products.contains(door));
+
+        Collection<Product> otherProducts = new ArrayList<>();
+        otherProducts.add(door);
+        otherProducts.add(window);
+
+        products.removeAll(otherProducts);
+
+        System.out.println(products);
     }
 }
