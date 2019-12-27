@@ -32,5 +32,7 @@ public class Main {
         System.out.println(products);
         System.out.println(products.size());
         System.out.println(products.isEmpty());
+        System.out.println(products.contains(window));
+        System.out.println(products.contains(door));
     }
 }
