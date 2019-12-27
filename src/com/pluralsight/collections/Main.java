@@ -18,9 +18,7 @@ public class Main {
 
         System.out.println(products);
 
-        final Iterator<Product> productIterator = products.iterator();
-        while(productIterator.hasNext()) {
-            Product product = productIterator.next();
+        for (Product product : products) {
             System.out.println(product);
         }
     }
