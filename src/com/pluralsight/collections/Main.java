@@ -18,8 +18,17 @@ public class Main {
 
         System.out.println(products);
 
-        for (Product product : products) {
-            System.out.println(product);
+        final Iterator<Product> productIterator = products.iterator();
+        while (productIterator.hasNext()) {
+            Product product = productIterator.next();
+
+            if (product.getWeight() > 20) {
+                System.out.println(product);
+            } else {
+                productIterator.remove();
+            }
         }
+
+        System.out.println(products);
     }
 }
