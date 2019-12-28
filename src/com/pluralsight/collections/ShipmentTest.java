@@ -1,5 +1,4 @@
 package com.pluralsight.collections;
 
-public class Shipment {
-
+public class ShipmentTest {
 }
